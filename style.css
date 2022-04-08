@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+#header {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-image: url("./images/Guillaume-Galtier-Unsplash.jpg");
+    margin-bottom: 18px;
+}
