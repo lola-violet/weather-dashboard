@@ -1,6 +1,6 @@
 // SEARCH AREA
 // https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
-var requestURL = "http://api.openweathermap.org/data/2.5/weather?q=seattle&appid=a1297b44ddf76ab119004cb7756bc90a";
+var requestURL = "http://api.openweathermap.org/data/2.5/weather?q=seattle&appid=";
 var APIkey = "a1297b44ddf76ab119004cb7756bc90a"
 
 // api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
