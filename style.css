@@ -10,10 +10,13 @@ body {
 
 
 #header {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     text-align: center;
     background-image: url("./images/Guillaume-Galtier-Unsplash.jpg");
     margin-bottom: 18px;
 }
 
+#forecast-cards {
+    justify-content: space-around;
+}

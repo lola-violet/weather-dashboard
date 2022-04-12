@@ -22,30 +22,73 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="card col-12 col-md-4 col-lg-3">
+                <div class="col-12 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label for="city-search">Search for a City:</label>
-                        <input class="form-control" type="search" placeholder="New York City" id="city-search">
-                        <button type="submit" class="btn btn-secondary">Search</button>
+                        <label for="city-search" name="city-search">Search for a City:</label>
+                        <input class="form-control" type="search" placeholder="New York City" id="city-search" name="city-search">
+                        <button type="submit" class="btn btn-secondary" id="search-btn">Search</button>
                     </div>
-                    <div id="search-history"></div>
                 </div>
                 <div class="col-12 col-md-8 col-lg-9">
-                    <div class="card border-secondary h-100" id="current-city"></div>
+                    <div class="card border-secondary h-100" id="current-city">
+                        <h3 id="city-name"></h3>
+                        <h5 id="current-date"></h5>
+                        <p id="current-temp"></p>
+                        <p id="current-wind"></p>
+                        <p id="current-humidity"></p>
+                        <p id="uv-index"></p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div id="search-history">
+                    <button class="prev-search invisible" id="history-1">Button</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-9">
                     <div id="forecast-label">
                         <h4>5 Day Forecast:</h4>
                     </div>
-                    <div id="forecast-cards">
-                        <div class="card" id="day-1"></div>
-                        <div class="card" id="day-2"></div>
-                        <div class="card" id="day-3"></div>
-                        <div class="card" id="day-4"></div>
-                        <div class="card" id="day-5"></div>
+                    <div class="row" id="forecast-cards">
+                        <div class="col-2 card forecast" id="1">
+                            <h4 class="date"></h4>
+                            <i class="icon"></i>
+                            <p class="temp"></p>
+                            <p class="wind"></p>
+                            <p class="humidity"></p>
+                        </div>
+                        <div class="col-2 card forecast" id="2">
+                            <h4 class="date"></h4>
+                            <i class="icon"></i>
+                            <p class="temp"></p>
+                            <p class="wind"></p>
+                            <p class="humidity"></p>
+                        </div>
+                        <div class="col-2 card forecast" id="3">
+                            <h4 class="date"></h4>
+                            <i class="icon"></i>
+                            <p class="temp"></p>
+                            <p class="wind"></p>
+                            <p class="humidity"></p>
+                        </div>
+                        <div class="col-2 card forecast" id="4">
+                            <h4 class="date"></h4>
+                            <i class="icon"></i>
+                            <p class="temp"></p>
+                            <p class="wind"></p>
+                            <p class="humidity"></p>
+                        </div>
+                        <div class="col-2 card forecast" id="5">
+                            <h4 class="date"></h4>
+                            <i class="icon"></i>
+                            <p class="temp"></p>
+                            <p class="wind"></p>
+                            <p class="humidity"></p>
+                        </div>
                     </div>
                 </div>
-
             </div>
-
 
         </div>
     </main>
@@ -54,6 +97,8 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <!-- JQuery UI -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Moment.Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- Custom JavaScript -->
     <script type="text/javascript" src="script.js"></script>
 </body>
