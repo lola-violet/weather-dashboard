@@ -26,11 +26,17 @@ I used the One Call API & Moment.JS to show each date & its respective data.
 <br>
 
 # Deployed Application
-
+[Weather_Dashboard](https://lola-violet.github.io/weather-dashboard/)
 <br>
 <br>
 
 # Usage
-
+The user clicks into the search input, enters the name of a city and clicks the search button. Then, current weather & forecast data appear.  
 <br>
+<br>
+
+![weather_dashboard_start](/images/weather_dashboard_start.png)
+<br>
+
+![weather_dashboard_data](/images/weather_dashboard_data.png)
 <br>
